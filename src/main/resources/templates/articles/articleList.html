@@ -12,6 +12,7 @@
 </div>
 
 <div class="container">
+  <button type="button" class="btn btn-secondary" onclick="location.href='./logout'">로그아웃</button>
   <button id="create-btn" class="btn btn-primary btn-sm" type="button" th:onclick="|location.href='@{/articles/new-article}'|">글 등록</button>
   <div class="mb-3" th:each="article : ${articles}">
     <div class="card">
